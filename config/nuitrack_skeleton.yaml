@@ -1,0 +1,39 @@
+body_model_path: /Users/TimSalzmann/Documents/Study/PhD/Code/Motion/experiments-motion/data/amass/smplh/neutral/model.npz
+
+joints_static: []
+
+parents:
+  - -1
+  - 0
+  - 0
+  - 1
+  - 2
+  - 0
+  - 3
+  - 4
+  - 5
+  - 8
+  - 8
+  - 8
+  - 10
+  - 11
+  - 12
+  - 13
+
+joints_type:
+  - Waist # 0
+  - LeftHip # 1
+  - RightHip # 2
+  - LeftKnee # 3
+  - RightKnee # 4
+  - Torso # 5
+  - LeftAnkle # 6
+  - RightAnkle # 7
+  - Neck # 8
+  - Head # 9
+  - LeftShoulder # 10
+  - RightShoulder # 11
+  - LeftElbow # 12
+  - RightElbow # 13
+  - LeftHand # 14
+  - RightHand # 15

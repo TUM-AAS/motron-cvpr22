@@ -1,0 +1,39 @@
+dataset_path: ./data/processed/amass
+graph_config: ./config/amass_skeleton.yaml
+dataset_fps: 50
+dataset_downsample_factor: 2
+output_path: ./output
+num_workers: 0
+
+num_epochs: 50
+num_iteration_per_epoch: 250
+history_length: 50
+prediction_horizon_train: 25
+prediction_horizon_eval: 25
+prediction_horizon: 25
+
+eval_frequency: 10
+num_iteration_eval: 20
+batch_size_eval: 100
+
+
+lr: 1.e-3
+clip_grad_norm: 1.
+batch_size: 32
+encoder_hidden_size: 256
+bottleneck_size: 64
+decoder_hidden_size: 128
+output_size: 64
+latent_size: 10
+num_layers: 1
+activation_fn: relu #LeakyReLU
+dropout: 0.0
+
+teacher_forcing_factor_start: 1.
+teacher_forcing_iterations: 1000
+kl_weight: 1.
+
+datasets_train:
+  - sample
+datasets_test:
+  - sample

@@ -1,0 +1,4 @@
+[submodule "Motion"]
+	path = Motion
+	url = https://github.com/TUM-AAS/motron.git
+	branch = cvpr22

@@ -1,0 +1,51 @@
+body_model_path: ./data/amass/smplh/neutral/model.npz
+
+joints_static: []
+
+parents:
+  - -1
+  - 0
+  - 0
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 9
+  - 9
+  - 12
+  - 13
+  - 14
+  - 16
+  - 17
+  - 18
+  - 19
+
+joints_type:
+  - Hips # 0
+  - LeftUpLeg # 1
+  - RightUpLeg # 2
+  - Spine0 # 3
+  - LeftLeg # 4
+  - RightLeg # 5
+  - Spine1 # 6
+  - LeftFoot # 7
+  - RightFoot # 8
+  - Spine2 # 9
+  - LeftToeBase # 10
+  - RightToeBase # 11
+  - Neck # 12
+  - LeftShoulder # 13
+  - RightShoulder # 14
+  - Head # 15
+  - LeftArm # 16
+  - RightArm # 17
+  - LeftElbow # 18
+  - RightElbow # 19
+  - LeftHand # 20
+  - RightHand # 21

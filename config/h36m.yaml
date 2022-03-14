@@ -1,0 +1,62 @@
+dataset_path: ./data/processed/h3.6m.npz
+graph_config: ./config/h36m_skeleton.yaml
+dataset_fps: 50
+dataset_downsample_factor: 2
+output_path: ./output/h36m
+num_workers: 0
+
+num_epochs: 4
+history_length: 50
+prediction_horizon_train: 25
+prediction_horizon_eval: 25
+prediction_horizon: 25
+
+eval_frequency: 1000
+num_iteration_eval: 20
+batch_size_eval: 50
+
+node_dropout: 0.
+
+lr: 1.e-3
+clip_grad_norm: 1.
+batch_size: 32
+encoder_hidden_size: 96
+bottleneck_size: 96
+decoder_hidden_size: 96
+output_size: 128
+latent_size: 5
+enc_num_layers: 1
+dec_num_layers: 1
+dropout: 0.0
+
+random_prediction_horizon: True
+curriculum_it: 0
+
+subjects_train:
+  - S1
+  - S6
+  - S7
+  - S8
+  - S9
+  - S11
+subjects_eval:
+  - S5
+subjects_test:
+  - S5
+
+test_actions:
+  - walking
+  - eating
+  - smoking
+  - discussion
+  - directions
+  - greeting
+  - phoning
+  - posing
+  - purchases
+  - sitting
+  - sittingdown
+  - takingphoto
+  - waiting
+  - walkingdog
+  - walkingtogether

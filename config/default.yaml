@@ -1,0 +1,33 @@
+graph_config: ./config/skeleton.yaml
+output_path: ./output
+num_workers: 0
+
+num_epochs: 100
+num_iteration_per_epoch: 250
+history_length: 40
+prediction_horizon: 20
+
+eval_frequency: 1000
+num_iteration_eval: 20
+batch_size_eval: 200
+
+
+lr: 1.e-3
+clip_grad_norm:
+batch_size: 64
+encoder_hidden_size: 256
+bottleneck_size: 64
+decoder_hidden_size: 128
+output_size: 128
+latent_size: 5
+num_layers: 2
+activation_fn: #LeakyReLU
+dropout: 0.0
+
+teacher_forcing_factor_start: 1.0
+
+dtype: float
+
+train_path: ./data/processed/train
+val_path: ./data/processed/val
+test_path: ./data/processed/test
