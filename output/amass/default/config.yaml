@@ -1,7 +1,8 @@
 batch_size: 128
 batch_size_eval: 50
 bottleneck_size: 128
-clip_grad_norm: null
+clip_grad_norm: 1.0
+curriculum_it: 0
 dataset_path: ./data/processed/amass
 datasets_test:
 - Transitionsmocap
@@ -30,21 +31,17 @@ device: cuda:0
 dropout: 0.0
 enc_num_layers: 1
 encoder_hidden_size: 128
-eval_frequency: 2000
+eval_frequency: 1000
 graph_config: ./config/amass_skeleton.yaml
 history_length: 40
-info: all_n_same_z
-latent_size: 10
+info: amass_default
+latent_size: 5
 lr: 0.001
-num_epochs: 20
+num_epochs: 50
 num_iteration_eval: 20
 num_workers: 0
-output_log_path: ./output/amass/20210305_094614_all_n_same_z
+output_log_path: ./output/amass/20211031_171639_amass_default
 output_path: ./output/amass
 output_size: 128
 prediction_horizon: 20
-prediction_horizon_eval: 20
-prediction_horizon_train: 20
-teacher_forcing_factor_start: 1.0
-teacher_forcing_iterations: 1000
-z_dropout: 0.0
+random_prediction_horizon: true
